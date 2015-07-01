@@ -22,6 +22,20 @@ module.exports = function (grunt) {
     clean: {
       build: '<%= config.dist %>'
     },
+    bump: {
+      options: {
+        files: ['package.json', 'bower.json', 'Makefile'],
+        updateConfigs: ['pkg'],
+        commit: true,
+        commitMessage: 'Version %VERSION%',
+        commitFiles: ['package.json', 'bower.json', 'Makefile'],
+        createTag: true,
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: true,
+        pushTo: 'origin'
+      }
+    },
     config: projectConfig,
     connect: {
       server: {
@@ -111,4 +125,9 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', ['build']);
+
+  grunt.registerTask('release', function () {
+    // Bump the appropriate version piece and commit it all up
+    grunt.task.run('bump-only:patch', 'bump-commit');
+  });
 };

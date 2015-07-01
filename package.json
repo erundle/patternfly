@@ -6,6 +6,7 @@
   "devDependencies": {
     "connect-livereload": "~0.3.0",
     "grunt": "~0.4.1",
+    "grunt-bump": "0.0.13",
     "grunt-contrib-connect": "~0.5.0",
     "grunt-contrib-less": "~0.8.1",
     "grunt-contrib-uglify": "~0.3.2",
