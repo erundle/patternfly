@@ -3235,10 +3235,10 @@ table.datatable th:active {
 .navbar-pf-header-alt {
   background: #030303 url('../img/nav-header-banner.svg') top left no-repeat;
   border: none;
-  border-radius: 0px;
+  border-radius: 0;
   border-top: 2px solid #199dde;
   height: 60px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   padding-top: 3px;
 }
 .navbar-pf-header-alt .infotip.bottom-right .arrow {
@@ -3295,7 +3295,7 @@ table.datatable th:active {
   font-weight: 700;
   height: 15px;
   line-height: 15px;
-  padding-left: 0px;
+  padding-left: 0;
   position: absolute;
   right: 10px;
   bottom: 8px;
@@ -3332,18 +3332,18 @@ table.datatable th:active {
   margin-right: 15px;
 }
 @media (max-width: 460px) {
-  .navbar-pf-header-alt .navbar-brand .navbar-brand-name {
+  .navbar-pf-header-alt .navbar-brand .navbar-brand-name s {
     display: none;
   }
 }
 .navbar-pf-header-alt .navbar-right {
-  margin-right: 0px;
+  margin-right: 0;
 }
 .navbar-pf-header-alt .navbar-toggle {
+  display: block;
   float: left;
   margin-left: 14px;
   margin-right: 20px;
-  display: block;
 }
 .navbar-pf-header-alt .navbar-toggle .icon-bar {
   background: #cfcfcf;
@@ -3366,7 +3366,7 @@ table.datatable th:active {
   z-index: 1000;
 }
 .nav-pf-vertical-alt .list-group {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 .nav-pf-vertical-alt .list-group-item {
   padding: 0;
@@ -3414,7 +3414,7 @@ table.datatable th:active {
   float: right;
   font-size: 9px;
   min-width: 20px;
-  padding: 5px 5px;
+  padding: 5px;
   position: absolute;
   right: 15px;
   text-align: center;

@@ -213,7 +213,7 @@
   }
 }(jQuery));
 
-// Util: PatternFly Collapable Left Hand Navigation
+// Util: PatternFly Collapsible Left Hand Navigation
 // Must have hamburger menu in top bar for exapand/collapse and class of fixed-left-nav-pf on the peer body content
 (function ($) {
 

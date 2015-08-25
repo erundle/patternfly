@@ -1,5 +1,7 @@
-.container-pf-sticky-footer > .nav-pf-vertical-alt {
-  height: @container-nav-pf-vertical-alt-with-footer-height-calc;	
+.container-pf-sticky-footer {
+  & > .nav-pf-vertical-alt {
+    height: @container-nav-pf-vertical-alt-with-footer-height-calc;	
+  }
 }
 
 .nav-pf-vertical-alt {
@@ -15,7 +17,7 @@
   z-index: 1000;
 
   .list-group {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .list-group-item {
@@ -39,57 +41,57 @@
         color: @nav-pf-vertical-alt-active-color;
         text-decoration: none;
       }
-	}
+    }
 
-	&.active {
-	  background-color: @nav-pf-vertical-alt-background-color;
-	  border-color: @list-group-border;
+    &.active {
+	    background-color: @nav-pf-vertical-alt-background-color;
+	    border-color: @list-group-border;
 
-	  a {
-	    color: @nav-pf-vertical-alt-active-color;
-	  }
-	}
+      a {
+	      color: @nav-pf-vertical-alt-active-color;
+      }
+    }
 
-	&.active:before {
-	  background: @nav-pf-vertical-alt-active-color;
-	  content: " ";
-	  display: block;
-	  height: 100%;
-	  left: 0;
-	  position: absolute;
-	  top: 0;
-	  width: 5px;
-	}
+    &.active:before {
+      background: @nav-pf-vertical-alt-active-color;
+      content: " ";
+      display: block;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 5px;
+    }
 
-	.badge {
-	  background: @gray-dark;
-	  border: 1px solid @nav-pf-vertical-alt-background-color;
-	  border-radius: 3px;
-	  color: @nav-pf-vertical-alt-badge-color;
-	  font-weight: 700;
-	  float: right;
-	  font-size: 9px;
-	  min-width: 20px;
-	  padding: 5px 5px;
-	  position: absolute;
-	  right: 15px;
-	  text-align: center;
-	  top: 21px;
-	  transition: @flyout-transition-pf;
-	}
+    .badge {
+      background: @gray-dark;
+      border: 1px solid @nav-pf-vertical-alt-background-color;
+      border-radius: 3px;
+      color: @nav-pf-vertical-alt-badge-color;
+      font-weight: 700;
+      float: right;
+      font-size: @font-size-base - 3;
+      min-width: 20px;
+      padding: 5px;
+      position: absolute;
+      right: 15px;
+      text-align: center;
+      top: 21px;
+      transition: @flyout-transition-pf;
+    }
 
-	.badge.notifications {
-	  background: @notification-badge-color;
-	}
+    .badge.notifications {
+      background: @notification-badge-color;
+    }
 
-	.fa {
-	  float: left;
-	  font-size: 20px;
-	  line-height: 30px;
-	  margin-right: 10px;
-	  text-align: center;
-	  width: 20px;
-	}
+    .fa {
+      float: left;
+      font-size: 20px;
+      line-height: 30px;
+      margin-right: 10px;
+      text-align: center;
+      width: 20px;
+    }
 
     .list-group-item-value {
       display: inline-block;
