@@ -5,14 +5,13 @@
   border-top: 2px solid @navbar-pf-border-color;
   height: @navbar-pf-header-alt-height;
   margin-bottom: 0;
-  padding-top: 3px;
 
   .infotip.bottom-right .arrow {
     left: 90%;
   }
 
   .nav {
-    padding-top: 2px;
+    padding-top: 5px;
 
     .action {
       padding-left: 20px;
@@ -88,23 +87,21 @@
 
   .navbar-brand {
     line-height: @navbar-pf-header-alt-brand-line-height;
-    padding: 8px 20px 15px 0px;
+    padding: @navbar-pf-header-alt-brand-padding;
 
     .navbar-brand-name {
       display: inline;
-      height: @navbar-pf-header-alt-brand-name-height;
     }
 
     .navbar-brand-icon {
       display: inline;
-      height: @navbar-pf-header-alt-brand-icon-height;
       margin-right: 15px;
     }
   }
 
   //This logo is too long. Need to hide it
   @media (max-width: 460px) {
-    .navbar-brand .navbar-brand-name s{
+    .navbar-brand .navbar-brand-name {
       display: none;
     }
   }
@@ -118,6 +115,7 @@
     float: left;
     margin-left: 14px;
     margin-right: 20px;
+    padding-top: 12px;
     
     .icon-bar {
       background: @navbar-pf-header-alt-color;

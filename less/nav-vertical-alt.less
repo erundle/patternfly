@@ -1,9 +1,3 @@
-.container-pf-sticky-footer {
-  & > .nav-pf-vertical-alt {
-    height: @container-nav-pf-vertical-alt-with-footer-height-calc;	
-  }
-}
-
 .nav-pf-vertical-alt {
   .backface-visibility(hidden);
   background: @nav-pf-vertical-alt-background-color;
@@ -16,6 +10,10 @@
   width: @nav-pf-vertical-alt-width;
   z-index: 1000;
 
+  .container-pf-sticky-footer  > & {
+    height: @container-nav-pf-vertical-alt-with-footer-height-calc; 
+  }
+
   .list-group {
     margin-bottom: 0;
   }
@@ -26,9 +24,9 @@
     a {
       color: @gray-dark;
       display: block;
-      font-size: 14px;
-      height: 63px;
-      padding: 17px 20px 17px 25px;
+      font-size: @font-size-base + 2;
+      height: @nav-pf-vertical-alt-link-height;
+      padding: @nav-pf-vertical-alt-link-padding-vertical @nav-pf-vertical-alt-link-padding-right @nav-pf-vertical-alt-link-padding-vertical @nav-pf-vertical-alt-link-padding-left;
       position: relative;
       white-space: nowrap;
 
@@ -44,11 +42,11 @@
     }
 
     &.active {
-	    background-color: @nav-pf-vertical-alt-background-color;
-	    border-color: @list-group-border;
+      background-color: @nav-pf-vertical-alt-background-color;
+      border-color: @list-group-border;
 
       a {
-	      color: @nav-pf-vertical-alt-active-color;
+        color: @nav-pf-vertical-alt-active-color;
       }
     }
 

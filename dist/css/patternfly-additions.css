@@ -2542,12 +2542,12 @@ table.datatable th:active {
   background: #f5f5f5;
   overflow: hidden;
 }
-.container-pf-sticky-footer > .container-pf-scroll {
-  height: calc(100% - 95px);
-}
 .container-pf-scroll {
   height: calc(100% - 60px);
   overflow: auto;
+}
+.container-pf-sticky-footer > .container-pf-scroll {
+  height: calc(100% - 95px);
 }
 .container-pf-scroll-content-area {
   padding: 20px 0;
@@ -3239,13 +3239,12 @@ table.datatable th:active {
   border-top: 2px solid #199dde;
   height: 60px;
   margin-bottom: 0;
-  padding-top: 3px;
 }
 .navbar-pf-header-alt .infotip.bottom-right .arrow {
   left: 90%;
 }
 .navbar-pf-header-alt .nav {
-  padding-top: 2px;
+  padding-top: 5px;
 }
 .navbar-pf-header-alt .nav .action {
   padding-left: 20px;
@@ -3320,19 +3319,17 @@ table.datatable th:active {
 }
 .navbar-pf-header-alt .navbar-brand {
   line-height: 31px;
-  padding: 8px 20px 15px 0px;
+  padding: 11px 20px 15px 0;
 }
 .navbar-pf-header-alt .navbar-brand .navbar-brand-name {
   display: inline;
-  height: 12px;
 }
 .navbar-pf-header-alt .navbar-brand .navbar-brand-icon {
   display: inline;
-  height: 35px;
   margin-right: 15px;
 }
 @media (max-width: 460px) {
-  .navbar-pf-header-alt .navbar-brand .navbar-brand-name s {
+  .navbar-pf-header-alt .navbar-brand .navbar-brand-name {
     display: none;
   }
 }
@@ -3344,12 +3341,10 @@ table.datatable th:active {
   float: left;
   margin-left: 14px;
   margin-right: 20px;
+  padding-top: 12px;
 }
 .navbar-pf-header-alt .navbar-toggle .icon-bar {
   background: #cfcfcf;
-}
-.container-pf-sticky-footer > .nav-pf-vertical-alt {
-  height: calc(100% - 95px);
 }
 .nav-pf-vertical-alt {
   -webkit-backface-visibility: hidden;
@@ -3364,6 +3359,9 @@ table.datatable th:active {
   transition: all 0.2s cubic-bezier(0.35, 0, 0.25, 1);
   width: 235px;
   z-index: 1000;
+}
+.container-pf-sticky-footer > .nav-pf-vertical-alt {
+  height: calc(100% - 95px);
 }
 .nav-pf-vertical-alt .list-group {
   margin-bottom: 0;
