@@ -48,17 +48,17 @@
       a {
         color: @nav-pf-vertical-alt-active-color;
       }
-    }
 
-    &.active:before {
-      background: @nav-pf-vertical-alt-active-color;
-      content: " ";
-      display: block;
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      width: 5px;
+      &:before {
+        background: @nav-pf-vertical-alt-active-color;
+        content: " ";
+        display: block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 5px;
+      }
     }
 
     .badge {
@@ -76,10 +76,10 @@
       text-align: center;
       top: 21px;
       transition: @flyout-transition-pf;
-    }
 
-    .badge.notifications {
-      background: @notification-badge-color;
+      &.notifications {
+        background: @notification-badge-color;
+      }
     }
 
     .fa {

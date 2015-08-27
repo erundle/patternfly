@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 9]><html class="ie9"><![endif]-->
 <!--[if gt IE 9]><!-->
-<html class="height-100">
+<html class="height-pf-100">
   <!--<![endif]-->
     <head>
     <title>Fixed Header w&sol; Left Nav - PatternFly</title>
@@ -27,7 +27,7 @@
     <script src="../components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../dist/js/patternfly.min.js"></script>
   </head>
-  <body class="height-100 container-pf-scroll-body">
+  <body class="height-pf-100 container-pf-scroll-body">
     <header class="navbar navbar-pf-header-alt" role="navigation">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle">
@@ -47,7 +47,7 @@
       <li class="dropdown">
         <a class="dropdown-toggle action" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
           <span title="Notifications" class="fa pficon-flag"></span>
-          <span class="notification-icon-count">2</span>
+          <span class="badge">2</span>
         </a>
         <div class="dropdown-menu infotip bottom-right">
           <div class="arrow"></div>
@@ -100,14 +100,14 @@
       <a href="#">
         <span class="fa fa-file-o" title="My Services" data-toggle="tooltip" data-placement="right"></span>
         <span class="list-group-item-value">My Services</span>
-        <span ng-if="item.count" class="badge">12</span>
+        <span class="badge">12</span>
       </a>
     </li>
     <li class="list-group-item">
       <a href="#">
         <span class="fa fa-file-text-o" title="My Requests" data-toggle="tooltip" data-placement="right"></span>
         <span class="list-group-item-value">My Requests</span>
-        <span ng-if="item.count" class="badge">2</span>
+        <span class="badge">2</span>
       </a>
     </li>
     <li class="list-group-item active">
@@ -127,7 +127,7 @@
         <a href="#">
           <span class="fa pficon-flag" title="Notifications"></span>
           <span class="list-group-item-value">Notifications</span>
-          <span ng-if="item.count" class="badge notifications">2</span>
+          <span class="badge notifications">2</span>
         </a>
       </li>
       <li class="list-group-item">
