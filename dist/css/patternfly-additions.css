@@ -3827,4 +3827,11 @@ table.datatable th:active {
 .cigna3 .navbar-collapse {
   background: rgba(0, 0, 0, 0.7);
 }
+.cbts .navbar-pf-header-alt {
+  border-top: none;
+  background: #030303 url(../img/cbts_background.png) top center no-repeat;
+}
+.cbts .footer-pf-alt {
+  background: #030303;
+}
 /*# sourceMappingURL=patternfly-additions.css.map */
