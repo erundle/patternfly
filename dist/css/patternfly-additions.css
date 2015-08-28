@@ -3771,4 +3771,50 @@ table.datatable th:active {
 .height-pf-100 {
   height: 100%;
 }
+.cigna1 .navbar-pf-header-alt {
+  background: #016db5;
+  border-color: transparent;
+}
+.cigna1 .footer-pf-alt {
+  background: #016db5;
+}
+.cigna2 .navbar-pf-header-alt {
+  background: #fff;
+  color: #333;
+  border-bottom: 1px solid #bbb;
+}
+.cigna2 .navbar-pf-header-alt .icon-bar {
+  background: #333;
+}
+.cigna2 .navbar-pf-header-alt .nav .action .caret,
+.cigna2 .navbar-pf-header-alt .nav .action .fa,
+.cigna2 .navbar-pf-header-alt .nav .action .pf-icon {
+  color: #333;
+}
+.cigna2 .navbar-pf-header-alt .nav .action .caret:hover,
+.cigna2 .navbar-pf-header-alt .nav .action .fa:hover,
+.cigna2 .navbar-pf-header-alt .nav .action .pf-icon:hover {
+  color: #666;
+}
+.cigna2 .navbar-pf-header-alt .nav .action .caret:focus,
+.cigna2 .navbar-pf-header-alt .nav .action .fa:focus,
+.cigna2 .navbar-pf-header-alt .nav .action .pf-icon:focus {
+  color: #666;
+}
+.cigna2 .navbar-pf-header-alt .nav .open > a.action .caret,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action:hover .caret,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action:focus .caret,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action .fa,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action:hover .fa,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action:focus .fa,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action .pf-icon,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action:hover .pf-icon,
+.cigna2 .navbar-pf-header-alt .nav .open > a.action:focus .pf-icon {
+  color: #666;
+}
+.cigna2 .footer-pf-alt {
+  border-top: 1px solid #bbb;
+  background: #fff;
+  color: #333;
+}
 /*# sourceMappingURL=patternfly-additions.css.map */
