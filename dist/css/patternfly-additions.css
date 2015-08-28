@@ -3817,4 +3817,14 @@ table.datatable th:active {
   background: #fff;
   color: #333;
 }
+.cigna3 .navbar-pf-header-alt {
+  background: #030303 url(../img/navbar.jpg) top right no-repeat;
+  background-size: 445px 57px;
+}
+.cigna3 .footer-pf-alt {
+  background: #030303;
+}
+.cigna3 .navbar-collapse {
+  background: rgba(0, 0, 0, 0.7);
+}
 /*# sourceMappingURL=patternfly-additions.css.map */
